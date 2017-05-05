@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+*{
+      box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height:100%;
+
+
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 350%;
+  color: #fff;
+}
+
+h2 {
+    color: #fff;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+    margin: 10px 0;
+
+}
+
+.titleheading {
+    font-family: 'Montserrat', sans-serif;
+  font-size: 220%;
+  color: #a9253c;
+  margin-top: 0;
+  width: 100%;
+}
+
+.fridabio {
+  padding: 40px;
+}
+
+p {
+  font-family: 'Roboto','Arial', sans-serif;
+}
+
+body {
+  padding: 20px;
+}
+
+.fridaquote {
+    background-color: #640f26;
+  padding: 20px;
+}
+
+footer {
+  padding: 20px;
+  background: #640f26;
+  color: #fff;
+}
+
+#title {
+width: 100%;
+height: 100vh;
+/* padding-top: 30%; */
+margin-bottom: 0px;
+
+background: url('../images/flowers2.jpg') no-repeat center center fixed;
+background-size: cover;
+min-height:100%;
+padding-top:310px;
+
+}
+
+.bio {
+  font-size: 120%;
+}
+
+
+ #attribute {
+font-style:italic;
+   color: #fff;
+  font-size: 120%;
+}
+
+#groupportrait {
+  padding-top: 10px;
+}
+
+
+.caption {
+  font-size: 100%;
+}
+
+#caption2  {
+  font-size: 85%;
+}
+
+#caption3  {
+  font-size: 85%;
+}
+
+.bottomimages {
+  padding: 20px 0 5px;
+}

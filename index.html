@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <!--  <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title> Culture in Crisis </title>
+	  <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/hearst.css">
+    <!--<link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/screen.css"> -->
+
+<!-- leaflet stylesheet -->
+  <link rel="stylesheet"  href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css">
+
+    <!-- Check Mindy's comments on the stylesheet order -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+  <div class= "container-fluid panel">
+    <div class="top">
+      <h1 class="text-center"> CULTURE IN CRISIS </h1>
+      <h2 class="section-heading text-center" >As luxury housing and chain stores replace mom and pop  <br> shops on University Avenue, Gainesville finds its <br>culture at risk because of gentrification. </h2>
+    </div>
+  </div>
+
+
+
+  <div class= "container-fluid panel textpanel">
+
+    <!-- <button> click here! </button> -->
+
+    <div class="col-xs-9 col-xs-offset-1 col-sm-9 col-sm-offset-2 col-md-6 col-md-offset-3 col-md-6 col-md-offset-3 intrograf">
+
+
+    <p> <span class="firstcharacter">T</span>o outsiders, Gainesville, Florida, might appear as nothing more than an average college town in the middle of the state. But to the people who call it home, Gainesville is much more. It is a city rich with culture, history and individuality. However, some are now voicing concern that modern development has ignited a cultural carnage.</p>
+
+    <!--  </div>
+
+
+<div class="col-xs-6 col-sm-8 col-md-8 col-md-offset-2 "> -->
+
+
+<p>Residents say Gainesville is slowly transforming into a chain-ridden, overpriced city controlled by expansive corporations. With each advancement and termination of classic local establishments, the city is falling victim to the brunt of gentrification: Upscale student complexes are rising along with 24-hour CVS stores and shiny new businesses. Tattoo shops and classic eateries are falling by the wayside. Musical venues that produced the likes of Tom Petty back in the day are being forced out to make room for gentrified high-tech company headquarters.</p>
+
+<p>This project honors and explores unique businesses that have made Gainesville what it is – and explores what it is becoming.</p>
+
+<img class="img-responsive center-block" alt ="Gainesville during FEST" src="images/GainesvilleCulture5.jpg">
+
+</div>
+
+
+
+<!--
+
+<iframe frameborder="0" class="juxtapose" width="70%" height="700" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=51db3aca-1363-11e7-9577-0edaf8f81e27"></iframe>
+
+<p class ="text-center"> For 33 years, student-run newspaper The Independent Florida Alligator was located along University Avenue in a former fraternity house. The building was sold and demolished in 2016. Apartments will be built there.</p> -->
+
+
+
+  <!--
+      <img class="img-responsive center-block" alt ="Gainesville during FEST" src="images/GainesvilleCulture5.jpg">
+
+-->
+
+  </div>
+
+
+<div class="video-container">
+  <iframe id="drea" src="https://player.vimeo.com/video/206085330" width="850" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+
+
+<img src="images/dictionary.png" class="img-responsive gentpic" alt="gentrification definition">
+
+<!--
+<div class="gent">
+
+  <h1> gen·tri·fi·ca·tion </h1>
+
+  <div class="col-lg-offset-6 col-md-offset-6 col-sm-offset-6 col-xs-offset-12">
+
+    <h3> The process of renewal and rebuilding accompanying the influx of middle-class or affluent people into deteriorating areas that often displaces poorer residents. (Merriam Webster Dictionary)</h3>
+
+  </div>
+</div>
+
+-->
+
+
+<!--
+
+<iframe frameborder="0" class="juxtapose" width="80%" height="800" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=51db3aca-1363-11e7-9577-0edaf8f81e27"></iframe>
+
+
+<p class="text-center"> For 33 years, student-run newspaper The Independent Florida Alligator was located along University Avenue in a former fraternity house. The building was sold and demolished in 2016. Apartments will be built there. </p>
+
+
+
+-->
+
+
+
+
+<div class="businesses">
+
+  <div class= "textpanel container-fluid">
+
+    <h2 class="section-subheading wow fadeInDown text-center">The following local businesses have been impacted by development. <br> Click on each image to learn more. </h2>
+  </div>
+
+<!-- modals from https://miketricking.github.io/bootstrap-image-hover/ -->
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive center-block" src="images/jam.jpg" alt="the_jam">
+            <div class="overlay">
+                <h2>The JAM</h2>
+				<p>
+          <button id="click" class="btn btn-danger">
+    CLOSED -  Read more </button>
+					<!--<a href="">Click here</a>-->
+				</p>
+            </div>
+    </div>
+</div>
+
+
+<div id="jamModal" class="modalContainer" style="display:none">
+			<div class="modalContent">
+				<div class="jamModal-imgContainer">
+
+				</div>
+
+				<!-- how to close the modal -->
+        <div class="modal-close">X</div>
+
+
+      <div class="jamTop">
+        <!--  <h1 class="text-right modaltitle"> The JAM</h1> -->
+        </div>
+
+  <div class="col-xs-12 col-sm-9 col-sm-offset-2 col-md-6 col-md-offset-3 col-md-6 col-md-offset-3 ">
+
+				<div id="jamModal-partyContainer">
+					  <p>The JAM started from a modest point.</p>
+
+            <p>The idea for the venue grew from the simple fact that Veronica Arenas, a friend of Blake Briand’s, had a few months left on her lease in a building that was meant to be a coffee shop. What started as jam sessions a few nights a week grew into large-scale events with full production. These concerts, charity events and even one wedding hosted hundreds on certain nights.</p>
+
+            <p>This side project created by Briand, Veronica Arenas and her brother Eduardo Arenas blossomed from a place to hangout into what was truly a second home for many UF students and Gainesville residents. On any given night patrons of The JAM could see explosively talented individuals in an intimate setting. But beyond that, patrons always knew that The JAM was a place of acceptance, self-expression and plenty of love.</p>
+
+            <p>Although The JAM closed nearly a year ago, the loyal concertgoers who call themselves the JAM Fam still celebrate its memory every time they go to a concert in Gainesville. The spirit of family that developed among anyone who ever attended The JAM is something that will live on always.</p>
+
+            <div class="video-container">
+              <iframe width="700" height="500" src="https://www.youtube.com/embed/hVzGI1bfF1U" frameborder="0" allowfullscreen></iframe>
+          </div>
+</div>
+
+
+
+
+
+
+        <span class="jamModal-value" id="jamModal-party"></span>
+
+      </div>
+			</div>
+		</div>
+
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive center-block" src="images/burrito2.jpg" alt="">
+            <div class="overlay">
+                <h2>Burrito Brothers</h2>
+				<p>
+          <button class="btn btn-danger" id="clickburr">
+              CLOSED - Read more
+          </button>
+				</p>
+
+      </div>
+  </div>
+</div>
+
+
+<div id="burrModal" class="modalContainer" style="display:none">
+  <div class="modalContent">
+    <div class="burrModal-imgContainer">
+
+
+    <div class="modal-close">X</div>
+    <!--<h3 id="burrModal-name">Burrito Brothers</h3>
+    <h4 id="burrModal-partyContainer">
+					A downtown coffee shop thrives despite the Starbucks that moved in across the street
+					<span class="burrModal-value" id="burrModal-party"></span>
+				</h4>-->
+
+
+        <div class="burrTop">
+          <!--  <h1 class="text-right modaltitle"> Burrito Brothers</h1> -->
+        </div>
+
+        <div class="col-xs-12 col-sm-10 col-sm-offset-2 col-md-6 col-md-offset-3 col-md-6 col-md-offset-3 ">
+
+    <div class="burrBody">
+
+      <p> After two moves and 40 years of burritos and special red sauce, Burrito Brothers in Gainesville is shutting its doors.</p>
+
+      <p> Randy Akerson, the owner, posted a Facebook message announcing that the Gainesville staple will be closing on Saturday, Feb. 4 due  in part to nearby construction of The Standard, a Landmark Properties apartment complex, as well as decreasing revenue.</p>
+
+<p> Akerson wrote: </p>
+
+    <blockquote> “As we are taught by the Buddha (and also George Harrison), all things must pass. Everything that has a first day, must also inevitably have a last day as well. Next Saturday, February 4, will be the last day for Burrito Brothers. Some of you may have already heard this, as we gave our employees an early notice so that they could find other jobs, and the news inevitably leaked, but the rumors are true, and we are closing.” </blockquote>
+
+
+
+<img src ="images/randy.jpg" class="img-responsive" alt="Randy Akerman">
+    <p> Hundreds of loyal customers expressed their sympathy and anger online, but the line out of the door of Burrito Brothers on Monday just hours after Akerson’s post showed the true dedication of its customers.</p>
+
+      <p> Heather Steingraber, a UF College of Pharmacy staff member, munched on chips and reminisced with her friend about the good times she’d had at the restaurant. She used to go to the “hole-in-the-wall” location on 13th Street where customers were packed in like sardines.</p>
+
+  <p> While the burrito aficionado said she is happy with Burrito Brothers any way she can get it, she does believe that the push for development of University Avenue is to blame for pushing the restaurant out of business. She also said she thinks the lack of parking hindered the restaurant’s business.</p>
+
+  <p> “(Gainesville) doesn’t have the same feel,” Steingraber said. “It had more character before. It’s all big businesses [now].”</p>
+
+  <p> Wade FitzGerald was one of the hundreds of customers who stood in line Monday for the chorizo and chicken burrito and made a pact to visit the institution every day this week.</p>
+
+      <p> “It’s what I always get,” said the 19-year-old UF sophomore, who said he has been eating at the restaurant for as long as he can remember.</p>
+
+          <p> Employees at the restaurant helped the steady stream of customers to their favorite burritos and dozens of commemorative T-shirts.</p>
+
+  <p> Adam Mickler, a 23-year-old Santa Fe sophomore, sweated away at the stove for the hungry patrons. The mood in the back was comedic, he said, as cooks wondered where these customers were when their business was needed.</p>
+
+  <p> The four-year employee, who is now a manager at the restaurant, began as an inexperienced 18-year-old dishwasher making minimum wage.</p>
+
+  <p> “(The owners) kind of just took me under their wing,” Mickler said. “They literally gave me everything.”</p>
+
+  <p> Rising from a regular customer who would come to Burrito Brothers to cure his hangovers, Mickler worked his way up and into the hearts of owners Janet and Randy Akerson.</p>
+
+  <p> When he came into work on the day that Randy was sharing the somber news of Burrito Brothers closing, Mickler thought that somebody had died. Everyone was tearing up, and when he was told, he did too.</p>
+
+  <p> “It’s surreal. It’s not going to feel real until the doors are closed,” he said. “I just assumed that I’d always be working here as long as I was in Gainesville.”</p>
+
+  <p> Co-owner Janet Akerson said she is most upset about her 25 employees losing their jobs.</p>
+
+  <p> “It makes us terribly sad, but we tried really hard,” she said, citing two GoFundMe pages and a 40th birthday fundraiser for the restaurant in December. “We’re at peace with it because there’s nothing we can do.”</p>
+
+<img src="images/gofundme.png" class="img-responsive" alt="gofundme">
+
+
+  <p> Janet says she has been reading what people are writing on her husband’s Facebook post and cries at the outpouring of love.</p>
+
+  <p> “We’ve had people coming in here for forty years,” she said, tears welling up in her eyes. </p>
+
+  <p> Burrito Brothers fans have already put in more than a 100 orders for frozen burritos to remember the taste of a Gainesville gone by, she said.</p>
+
+  <p> Staring out the window of her restaurant, Janet sees The Standard next door, a 10-story-tall construction site blowing dust in the direction of Burrito Brothers’ outdoor patio.</p>
+
+  <p> “I’m not happy with the direction my city is going,” she said, referring to the development of big chains and comparing the city to a younger Miami.</p>
+
+  <p> After emailing with developers of The Standard who said it wasn’t their fault for the small business’s dropping revenues, the Akersons decided not to pursue a lawsuit, estimated to cost them a minimum of $100,000. It was time to close, Randy concluded.</p>
+
+  <p> A 20 percent to 25 percent drop in revenues over six months was catastrophic for a small business like theirs, he said.</p>
+
+  <p> Randy said he mainly blames the construction of The Standard for his business failing. The impact of decreased parking and blocked roads was “instantaneous and obvious,” he said.</p>
+
+  <p> The Standard could not be reached for comment.</p>
+
+  <p> “The dirt and dust created by a construction site is unbelievable. The noise is deafening. The smell of open sewers was appalling,” Randy said. “We tried to stick it out,” but the timing of Burrito Brothers’ second expansion in Midtown coinciding with the massive construction project next door was “absolutely as horrendous as it could possibly be.”</p>
+
+  <img src="images/tweet2.png" class="img-responsive" alt="twitter2">
+
+  <p> Randy echoed the sentiment expressed by his wife and many long-time customers: “Gainesville in general has lost its character.”</p>
+
+  <p> About two weeks ago, Randy said he weighed his options and decided to tell his employees that they should start looking for new jobs. They were grateful to have the heads-up.</p>
+
+  <p> “It was the last kindness I could do for them,” he said. “Neither they nor I thought a day would come that I wouldn’t have a job to give them.”</p>
+
+  <p> Danielle Vickery-Keating, a 38-year-old home health worker, could not have imagined a day when she wouldn’t be a customer at the restaurant either. </p>
+
+  <p> Vickery-Keating said she makes a stop in Gainesville on her way to Tampa every year specifically for the burritos and used to have frozen burritos and a half gallon of red sauce shipped to her in South Carolina.</p>
+
+  <p> “It was a little piece of Gainesville in your freezer,” she said.</p>
+
+  <p> She remembers going to the original location on 13th Street, where only four people could sit inside and the line always made its way out the door. The customers were consistent and frequent.</p>
+
+  <p> “It didn’t matter if it was cold or raining. You just went and got what you wanted,” Vickery-Keating said. “It’s just a little bit of heaven in your day.” </p>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive center-block" src="images/addiction.jpg" alt="">
+            <div class="overlay">
+                <h2>Addiction Tattoo</h2>
+      				<p>
+                <button class="btn btn-warning" id="clickaddiction">
+                  RELOCATED - Read more
+                </button>
+      				</p>
+            </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive center-block" src="images/MaudesGroup.jpg" alt="">
+            <div class="overlay">
+                <h2>Maude's Classic Cafe</h2>
+				<p>
+          <button class="btn btn-primary" id="clickMaudes">
+          OPEN -  Read more
+          </button>
+				</p>
+
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+<div id="maudesModal" class="modalContainer" style="display:none">
+  <div class="modalContent">
+    <div class="maudesTop">
+      <!-- <h1 class="text-right modaltitle"> Maude's Classic Cafe</h1> -->
+    </div>
+
+    <div class="modal-close">X</div>
+
+
+    <div class="col-xs-12 col-sm-10 col-sm-offset-2 col-md-6 col-md-offset-3 col-md-6 col-md-offset-3 ">
+
+    <div class="maudesBody">
+      <p> Through the buzz and cacophony of construction in Gainesville, one small coffee shop continues to outlast the ever-changing city. Maude’s Classic Café has been serving up coffee, food, board games and good music since 1995.</p>
+
+      <p>About 10 years ago, a Starbucks opened directly across the street from Maude’s little downtown spot. While many expected the dust of corporation construction to swallow up Maude’s business, this wasn’t the case. Maude’s has continued to thrive as
+        a local tradition. People keep coming back because they like the eclectic and feeling of acceptance they get when walking through the doors.</p>
+
+      <p>With “Rocky Raccoon” by The Beatles playing in the background, employee Max Eisenberg explains his thoughts on Maude’s: “A lot of staff is involved in the music scene – there have been many different band members on our staff.”</p>
+
+      <p>"We embody the do-it-yourself scene and punk scene in town and I think it’s really important to expose people to these scenes,” says Eisenberg. “Maude’s has always been a part of it.”</p>
+
+      <p>Maude’s is also a popular studying spot. Week days and weekends alike, the business fills up with students in need of good coffee. For those in need of a break from staring at a laptop screen or just needing to unwind, Maude’s also has a wide collection
+        of board games to play.</p>
+
+        <img src="images/MaudesWindow.jpg" alt="patrons at maudes" class="img-responsive">
+
+
+      <p>After visiting a few times, you start to notice the same faces. Maude’s employees are social and have regulars whom they interact with and even spend their breaks chatting with. The employees dress how they want to and aren’t afraid to speak what’s
+        on their mind, which adds to the feel of the restaurant.</p>
+
+      <p>Maude’s Classic Café closes at 9 p.m. and turns into Maude’s Sidecar Bar as the area becomes busier. From live music to drag shows, there’s entertainment of some kind. Maude’s is famous for its weekly drag show, “Downtown Drag.” </p>
+
+      <p>“I got hired during a struggle at the company that had to do with old ownership,” Eisenberg says, “and all of the other coffee shops that have opened up in the past couple of years. I think the people who got hired really turned it around again.”
+      </p>
+
+      <img src="images/MaudesSmoking.jpg" alt="patrons at maudes" class="img-responsive">
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive center-block" src="images/littledoughhug.jpg" alt="">
+            <div class="overlay">
+                <h2>Dough Religion</h2>
+				<p>
+          <button class="btn btn-danger" id="clickDough">
+            CLOSED - Read more
+          </button>
+				</p>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div id="doughModal" class="modalContainer" style="display:none">
+  <div class="modalContent">
+
+    <div class="modal-close">X</div>
+
+
+    <div class="doughTop">
+    <!--  <h1 class="text-right modaltitle"> Dough Religion + ooZoo Bar</h1> -->
+    </div>
+
+
+
+
+
+    <div class="col-xs-12 col-sm-10 col-sm-offset-2 col-md-6 col-md-offset-3 col-md-6 col-md-offset-3 ">
+
+      <div class="doughBody">
+        <p>Customers at ooZoo Bar beckoned manager David Scott over from the Dough Religion Pizza side of the restaurant on Sunday night. The manager of both businesses ran over, clinked a cup with the customers and took a shot. </p>
+
+        <p>During the pizza joint and bar’s last few days, patrons and employees are making the most of the remaining inventory, as the restaurants will not be buying any more. </p>
+
+        <p>“We’re trying to make the most of what we have and trying to remain positive,” Scott, 31, said. </p>
+
+        <p>Dough Religion Pizza and ooZoo Bar, located at 1404 W University Avenue, are set to close when they run out of food sometime this week, tentatively on Wednesday. The businesses need to vacate the property by the first week of March. Managers of Spoon @ U14, the investment firm that owns the building, are in the process of selling the building for an undisclosed amount to an unidentified buyer. </p>
+
+        <p>“It’s too early to confirm this,” investment manager Meir Zuchman said. He declined to comment on the allegations that this was a financially-driven decision. </p>
+
+        <img class="img-responsive" src="images/outsidedough.jpg" alt="exterior of Dough Religion">
+
+        <p>Scott and other managers said they speculate that the owners were offered a lot of money that they could not refuse. </p>
+
+        <p>When asked if the construction of The Standard — a 10-story apartment building owned by Landmark Properties next door— was to blame for the business decision, no one could confirm it. </p>
+
+        <p>Looking out the window toward the construction, Scott said, “Damn, with this place going in, a shift would have been coming.” </p>
+
+        <p>About 40 employees — 60 percent of whom are estimated to be University of Florida students — will lose their jobs. </p>
+
+        <p>“It’s pretty devastating,” Scott said. “The trajectory was very much positive, and considering all things, it is very disappointing that this is happening.” </p>
+
+        <p>Scott said the creation of the connected restaurants was a group effort—the employees’ fingerprints are on the menu items and the designs, and “they feel like this place is partly theirs.” </p>
+
+        <p>“We’ve really felt like we were on the precipice of a great thing,” he said. </p>
+
+        <p>One of the compliments that Scott said made him bittersweet was when customers told him, “we don’t tell people about this place because we don’t want it to get busy.” They called it Gainesville’s “best-kept secret.” </p>
+
+        <p>It was no secret that it was an up-and-coming venue with increasing sales, but it was not enough to keep the owners from selling it, he said. </p>
+
+
+        <p>While ooZoo Bar and Dough Religion Pizza are down the street and tucked away from the Midtown scene, the location and older crowd was a selling point for some regulars. </p>
+
+
+        <p>A group of four friends vowed to come to ooZoo Bar for all of its remaining days. </p>
+
+        <p>For almost five years, Christine Voigt, a 33-year-old lecturer at UF, and her husband Thomas Hamm, a 29-year-old Target worker, searched for their place in Gainesville, a place where they would feel at home. When they found ooZoo Bar, they knew
+          that was it. </p>
+
+        <p>“I don’t know where I’m going to go anymore,” she said. “We don’t go out [to] other places.” </p>
+
+        <p>Voigt used to bring a class of about 30 international students from the English Language Institute to Dough Religion Pizza. Although there was a lunch rush and a language barrier, the manager would be friendly and patient with them, taking his
+          time, she said. </p>
+
+        <p>Going to the bar two to three times a week was a tradition for Tomtine, the couple nickname the bartenders bestowed upon the regulars. </p>
+
+        <p>“There’s a serious void that we can’t fill,” Hamm said. “This was the first place we’ve felt like we’ve belonged in five and a half years.” </p>
+
+
+        <img src="images/doughBoard.JPG" alt="board on the last day of operations" class="img-responsive">
+
+
+        <p>For Sean McCarty, a 30-year-old kitchen manager and assistant manager of the restaurants, his home was taken from him without a second thought. If put in the owner’s position, McCarty said he believes it would have been a lot harder for him to
+          sell the place that gave him a second family. </p>
+
+        <p>McCarty understands the decision from a business perspective, but said he thinks the owner did not understand the collateral damage he would be causing with human emotion. </p>
+
+        <p>“It sucks for people who let go of their second job,” McCarty said. “Those are the things that I don’t think the owner necessarily realized.”
+
+          <p>While he has left other restaurant jobs before, moving on has never been this difficult. </p>
+
+          <p>“This one probably has more of ‘me’ in it,” he said, citing menu development, management procedures and vendor meetings, all of which he had a hand in. </p>
+
+          <p>“It just hurts as a human who’s put so much into something to just have it torn away from you,” he said. </p>
+
+          <p>McCarty has been telling customers who come into the restaurant that they are probably eating their last pizza from Dough Religion—a conversation he’d rather have in person rather than online, in order to see their reaction. </p>
+
+          <p>There hasn’t been much time to publicize the closing, as the employees found out their fate on Friday, McCarty said. With limited supplies, the kitchen manager said he would rather the dwindling supplies “not be the last taste people get in
+            their mouth.” </p>
+
+          <p>“I’d rather us be remembered as a thriving local company,” he said. </p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive center-block" src="images/burger.jpg" alt="burgerque">
+            <div class="overlay">
+                <h2>BurgerQue</h2>
+				<p>
+          <button class="btn btn-danger" id="clickFlash">
+          CLOSED - Read more
+          </button>
+				</p>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div id="flashModal" class="modalContainer" style="display:none">
+  <div class="modalContent">
+    <div class="flashModal-imgContainer">
+
+    </div>
+
+    <div class="modal-close">X</div>
+    <!--<h3 id="flashModal-name">BurgerQue</h3>-->
+  <!--  <h4 id="flashModal-partyContainer">
+					A downtown coffee shop thrives despite the Starbucks that moved in across the street
+					<span class="flashModal-value" id="flashModal-party"></span>
+				</h4>-->
+
+        <div class="burgerTop">
+        <!--  <h1 class="text-right modaltitle"> BurgerQue</h1> -->
+        </div>
+
+    <div class="flashBody">
+
+
+      <div class="col-xs-12 col-sm-10 col-sm-offset-2 col-md-6 col-md-offset-3 col-md-6 col-md-offset-3 ">
+
+      <p>BurgerQuE, known for its barbeque and burger fusion at 1220 W. University Ave., closed its doors in late October due to management concerns, says Tim Mankin, the owner of the restaurant.</p>
+
+      <p>Mankin, 46, says the staff was not as efficient as his fast-paced employees at the two locations in Fort Myers because of a rushed opening in Gainesville. The restaurant will open again in January 2017 when employees are finished training at the Fort Myers location and can move to Gainesville.</p>
+
+      <p>“This location’s going to be kind of like bringing my first (restaurant) out,” he says. “It takes time for things to develop.”</p>
+
+      <p>Mankin says there was a disconnect between training his employees, which could take up to 90 days, and the quick turnaround to get the store opened in two months, which happened in November 2015.</p>
+
+      <p>His decision to close temporarily and reopen in January 2017 also coincides with the construction of a McDonald’s next door and the opening of Felipe’s Taqueria across the street. Some customers and employees seem to agree that BurgerQuE will do better with the added competition come January.</p>
+
+
+      <img src="images/closed.jpg" alt="closed" class="img-responsive">
+
+      <p>“Not everybody wants to eat the same thing all the time,” Mankin says.</p>
+
+      <p>Mankin hopes his business will stay afloat due to increased foot traffic from The Standard, an apartment complex slated to open in 2017. Even if the students’ destination is McDonald’s, he said they would inevitably pass by BurgerQuE on their way, a boost for his brand.</p>
+
+    <p>  For Martha Wilson, 19, a loyal BurgerQuE customer-turned-employee, eating at the restaurant is an easy choice.</p>
+
+      <p>When Wilson first walked into BurgerQuE, she said the experience was heavenly. The smell of “really good, pure angus beef” and the sight of posters of “nostalgic music” drew her in.</p>
+
+      <p>“I’ve never actually seen anything like it,” she says. “Regardless of ever working there… I would be this excited about it.”</p>
+
+      <p>Wilson says she has faith that Mankin will make the restaurant successful, despite increased competition along University Avenue.</p>
+
+      <p>“He’s going to make it work,” Wilson says. “Something about him makes you know he’s going to figure it out. It’ll be nothing but up from here.”</p>
+
+      <p>Like many loyal BurgerQuE customers, Wilson says she is willing to wait for BurgerQuE to reopen. After all, she gave up three jobs to work at one of her favorite restaurants.</p>
+
+      <p>“I’m as eager for it to reopen as I’m sure anyone is,” she says. “I miss the food.”</p>
+
+      <p>Daniel Leal, a 22-year-old UF sustainability studies senior and a BurgerQuE regular, says he was shocked when he realized one of his favorite Gainesville restaurants was closed.</p>
+
+      <p>“When I discovered that they weren’t opening until January, I was so mad,” Leal says. He understands the decision to close. He had heard how the two restaurants in Fort Myers were comparable to rock concerts. As a fan of the rock-and-roll theme, beef brisket and kegs used as decorations, Leal says customers go to a McDonald’s for the food, whereas for BurgerQuE diners, it’s more about the experience.</p>
+
+      <p>“I’m a firm believer that when you go out to eat… it might as well be a full experience,” Leal says. “(At BurgerQuE), you feel like you’re backstage at a Led Zeppelin concert.”</p>
+
+
+      <img src="images/mcdonalds.jpg" alt="closed" class="img-responsive">
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div id="addictionModal" class="modalContainer" style="display:none">
+  <div class="modalContent">
+    <div class="addictionModal-imgContainer">
+
+    </div>
+
+    <div class="modal-close">X</div>
+    <!--<h3 id="burrModal-name">Burrito Brothers</h3>
+    <h4 id="burrModal-partyContainer">
+					A downtown coffee shop thrives despite the Starbucks that moved in across the street
+					<span class="burrModal-value" id="burrModal-party"></span>
+				</h4>-->
+
+  <div id="addictionTop">
+    <!--  <h1 class="text-right modaltitle"> Addiction Tattoo</h1> -->
+    </div>
+    <div class="col-xs-10 col-sm-8 col-md-8 col-md-offset-2">
+
+    <div class="addictionBody">
+
+
+      <div class="video-container">
+
+        <iframe src="https://player.vimeo.com/video/206085494" width="900" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+</div> <!-- closes the whole modal -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<div id ="peng">
+    <div class="col-sm-6 devguys1">
+      <h2>Ken Peng</h2>
+      <h3> Blogger, <a href="https://www.keneatsgainesville.com/" target="_blank">Ken Eats Gainesville</a></h3>
+      <p> Food blogger Ken Peng has been living in Gainesville since 2004. In the past five years, he’s seen the food scene change in Gainesville as businesses come and go.</p>
+
+      <p> Peng sees development is a good thing. Amenities such as luxury housing and high end restaurants might draw young professionals and startups to stay in Gainesville. Organizations like the Community Redevelopment Agency are working on projects to improve town, from better bike lanes to new parks. </p>
+
+      <p class="photocred">  Photo courtesy of Ken Peng. </p>
+    </div>
+
+    <div class="col-sm-6">
+      <iframe width="100%" height="600" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/315754081&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    </div>
+
+</div>
+
+-->
+
+
+
+
+
+
+<div id="mapwrap">
+<!--  <div id="mapid" > </div> -->
+</div>
+</div>
+
+
+<row id="mcgurn">
+
+
+
+    <div class="col-sm-6 devguys2">
+      <h2 class="mcgurnhead">The benefits of development: How the McGurns rejuvenated downtown Gainesville</h2>
+      <h3> Ken McGurn </h3>
+      <h4> <a target="_blank" href="http://mcgurn.com/"> Businessman, McGurn Management Company</a></h4>
+
+      <p> Gainesville local Ken McGurn has worked on redevelopment projects since 1978. Ken and his wife Linda McGurn won the 1986 National Southeast Quadrant Redevelopment Project that included the Sun Center, Arlington Square Apartments, the Star Garage Legal Center, the Downtown Parking Garage and 14 blocks of the city streets. </p>
+      <p>The redevelopments of the McGurns helped maintain the fabric of the historical downtown area. Although there was opposition during project proposals and construction, Ken McGurn said that instead of giving up he did everything he could to help the area continue to develop. This included keeping tenants that could not pay rent instead of having vacancies and supporting businesses that were in debt. He said it was not instantly successful. "It takes the initial step and somebody to believe in it and make it happen."</p>
+
+      <p class="photocred">  Photo courtesy of The Gainesville Sun. </p>
+
+</div>
+
+<div class="col-sm-6 devguys1">
+  <img src="images/mcgurnspixel.jpg" class="kenpic img-responsive" alt="">
+
+  <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/315775269&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+</div>
+
+</div>
+</row>
+
+
+<div class="footer1">
+<!--<p id ="aboutus"> About this project </p> -->
+
+<div id="teambio">
+
+  <div class="col-xs-10 col-sm-8 col-md-8 col-md-2 aboutproj">
+
+    <div class="col-xs-10 col-sm-8 col-md-8 col-md-offset-2 ">
+
+    <h2> About the project </h2>
+
+      <p>Culture in Crisis was created by students at the University of Florida's College of Journalism and Communications. </p>
+
+    <h3> Contributing writers and photographers </h3>
+
+      <ul>
+        <li>Natalie Rao</li>
+        <li>Max Chesnes</li>
+        <li>Gabrielle Calise</li>
+        <li>Drea Cornejo </li>
+        <li>Abigail Miller</li>
+        <li>Emma Green </li>
+        <li>Cecelia Lemus </li>
+        <li>Zachariah Chou </li>
+      </ul>
+
+      <h3> Web developer</h3>
+      <ul>
+        <li> Gabrielle Calise </li>
+      </ul>
+
+      <h3> Faculty Adviser</h3>
+      <ul>
+        <li> John Freeman, Professor </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+
+<!--scripts-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/hearst.js"></script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"> </script>
+
+<!-- THE LEAFLET SCRIPTS MUST COME LAST!!!!! If they don't, you will get some wonky stuff. I don't make the rules ok. Also don't forget the Leaflet stylesheet in the head -->
+  <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"> </script>
+  <script src="js/map.js"></script>
+
+
+
+</body>
+</html>
